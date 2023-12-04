@@ -1,0 +1,38 @@
+@tailwind base;
+:root {
+  ::selection {
+    background-color: var(--accent);
+    color: var(--background);
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #202020;
+  --foreground: #fffffd;
+  --accent: #edd412;
+  --accent-bg: #5b5000;
+  --background-alpha: #0d0b000f;
+  --foreground-alpha: #fffef97e;
+  background: var(--background);
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(var(--background) 65%, var(--accent-bg) 100%) no-repeat;  
+  color: var(--foreground);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "Outfit", sans-serif;
+  src: url("../public/Outfit-VariableFont_wght.ttf");
+}
